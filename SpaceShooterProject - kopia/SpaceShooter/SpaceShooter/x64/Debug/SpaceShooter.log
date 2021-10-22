@@ -1,0 +1,4 @@
+﻿  Game.cpp
+D:\GitHub\DOD-SpaceShooter\SpaceShooterProject - kopia\SpaceShooter\SpaceShooter\Data.h(11,2): warning C4091: 'static ': ignored on left of 'CollisionLayers' when no variable is declared
+D:\GitHub\DOD-SpaceShooter\SpaceShooterProject - kopia\SpaceShooter\SpaceShooter\Game.cpp(85,42): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+  SpaceShooter.vcxproj -> D:\GitHub\DOD-SpaceShooter\SpaceShooterProject - kopia\SpaceShooter\x64\Debug\SpaceShooter.exe
