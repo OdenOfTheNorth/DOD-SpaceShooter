@@ -57,7 +57,7 @@ void Enemy::Render(SDL_Renderer* renderer, EnemyData data[], int arrayLength) {
 	{
 		if (!data[i].IsActive)
 		{
-			return;
+			continue;
 		}
 
 		SDL_SetRenderDrawColor(renderer, 255, 0, 0, 255);
@@ -96,6 +96,11 @@ void Enemy::UpdatePosition(EnemyData* enemyData, Vector2 target, double deltaTim
 		if (!enemyData[i].IsActive)
 		{
 			continue;
+		}
+
+		if (enemyData[i].print)
+		{
+			cout << "dead" << endl;
 		}
 
 		aliveEnemy++;

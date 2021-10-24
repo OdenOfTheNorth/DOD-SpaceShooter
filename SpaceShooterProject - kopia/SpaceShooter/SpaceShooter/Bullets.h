@@ -17,11 +17,7 @@ public:
 	double lifeTime = 7;
 	double currentlifeTime = 0;
 	//SDL_Rect BulletRect;
-	SDL_Texture* texture;
-
-	virtual void OnCollision() override {
-		IsActive = false;
-	}
+	//SDL_Texture* texture;
 };
 
 class Bullets

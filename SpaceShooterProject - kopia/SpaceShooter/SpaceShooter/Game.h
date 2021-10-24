@@ -35,14 +35,14 @@ struct GameData
 public:	
 	int SpawnWave = 25;
 	int EnemysAlive = 0;
-	static const int EnemysPoolSize = 350;
-	static const int BulletsPoolSize = 1000;
+	static const int EnemysPoolSize = 100;
+	static const int BulletsPoolSize = 500;
 		
 	PlayerData playerData;
 	EnemyData EnemysData[EnemysPoolSize];
 	BulletData Bullets[BulletsPoolSize];	
 	
-	vector<GameObject> gameObjects;
+	vector<GameObject*> gameObjects;
 
 	bool IsRunning = true;
 };
@@ -69,27 +69,12 @@ class Game
 public:
 	Game();
 	~Game();
-
 	void StartGame(SDLRenderData data);
-	void GameLoop(SDLRenderData SDLData, GameData gameData);
-
+	void GameLoop(SDLRenderData SDLData, GameData* gameData);
 	void Render(SDL_Renderer* renderer, PlayerData playerData, EnemyData enemyData[], int enemyCount,
-		BulletData bulletData[], int bulletCount);
-
-	//void RenderEnemys(SDL_Renderer* renderer, EnemyData enemyData[], int enemyCount);
-	//void RenderPlayer(SDL_Renderer* renderer, PlayerData playerData);
-	//void RenderBullets(SDL_Renderer* renderer, BulletData bulletData[], int bulletCount);
-	
+		BulletData bulletData[], int bulletCount);	
 	void Update(GameData* gameData, Grid* grid, double deltaTime);
-	//void UpdateEnemyPosition(EnemyData* enemyData, Vector2 target, int PoolSize);
-	//void UpdatePlayerPosition(PlayerData* playerData);
-
+	void CheckCollition(vector<GameObject*> gameObjects);
 	void SpawnEnemys(EnemyData* enemyData, Vector2 pos, int waveSize, int poolSize);
-
-	//Collision2D* collsionSystem;
-	//Player player;
-	//Enemy Enemy;
-	//Bullets bullets;
-
 };
 

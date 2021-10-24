@@ -17,14 +17,19 @@ public:
 
 	SDL_Texture* texture;
 
-	virtual void OnCollision() override{
+
+
+	/*
+	void OnCollision() override{
+		IsActive = false;
+		
 		Health -= 10;
 
 		if (Health < 0)
 		{
 			IsActive = false;
 		}
-	}
+	}*/
 };
 
 class Enemy

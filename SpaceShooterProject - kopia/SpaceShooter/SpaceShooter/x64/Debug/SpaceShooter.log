@@ -1,4 +1,11 @@
-﻿  Game.cpp
-D:\GitHub\DOD-SpaceShooter\SpaceShooterProject - kopia\SpaceShooter\SpaceShooter\Data.h(11,2): warning C4091: 'static ': ignored on left of 'CollisionLayers' when no variable is declared
-D:\GitHub\DOD-SpaceShooter\SpaceShooterProject - kopia\SpaceShooter\SpaceShooter\Game.cpp(85,42): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+﻿  Data.cpp
+D:\GitHub\DOD-SpaceShooter\SpaceShooterProject - kopia\SpaceShooter\SpaceShooter\Data.h(12,2): warning C4091: 'static ': ignored on left of 'CollisionLayers' when no variable is declared
+  Enemy.cpp
+D:\GitHub\DOD-SpaceShooter\SpaceShooterProject - kopia\SpaceShooter\SpaceShooter\Data.h(12,2): warning C4091: 'static ': ignored on left of 'CollisionLayers' when no variable is declared
+D:\GitHub\DOD-SpaceShooter\SpaceShooterProject - kopia\SpaceShooter\SpaceShooter\Enemy.cpp(25,38): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+D:\GitHub\DOD-SpaceShooter\SpaceShooterProject - kopia\SpaceShooter\SpaceShooter\Enemy.cpp(68,25): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+D:\GitHub\DOD-SpaceShooter\SpaceShooterProject - kopia\SpaceShooter\SpaceShooter\Enemy.cpp(69,25): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+D:\GitHub\DOD-SpaceShooter\SpaceShooterProject - kopia\SpaceShooter\SpaceShooter\Enemy.cpp(92,24): warning C4305: 'initializing': truncation from 'double' to 'float'
+D:\GitHub\DOD-SpaceShooter\SpaceShooterProject - kopia\SpaceShooter\SpaceShooter\Enemy.cpp(115,39): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+  Generating Code...
   SpaceShooter.vcxproj -> D:\GitHub\DOD-SpaceShooter\SpaceShooterProject - kopia\SpaceShooter\x64\Debug\SpaceShooter.exe

@@ -29,7 +29,7 @@ public:
 	//Movement
 	Vector2 Velocity = Vector2(0, 0);
 	Vector2 RectSize = Vector2(40, 40);
-	Vector2 ScreenSize = Vector2(0, 0);
+	//Vector2 ScreenSize = Vector2(0, 0);
 
 	//Movement
 	double MoveSpeed = 70;
@@ -42,9 +42,6 @@ public:
 	SDL_Rect MouseRect;
 	int MousePositionX;
 	int MousePositionY;
-
-	
-
 	//ParticalsData Particals[4];
 };
 /*
